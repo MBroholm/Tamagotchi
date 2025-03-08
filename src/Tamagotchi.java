@@ -147,7 +147,7 @@ public class Tamagotchi {
         }
     }
 
-    public void makeSound(){
-        System.out.println(name+" makes a sound!");
+    void makeSound() {
+
     }
 }
