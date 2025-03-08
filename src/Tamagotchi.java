@@ -82,13 +82,13 @@ public class Tamagotchi {
 
     //Method returning String stat bar
     public String statBar(int stat){
-        String str = "[";
+        StringBuilder str = new StringBuilder("[");
         for(int i=MIN_STAT; i<MAX_STAT; i++){
-            str+= (i<stat) ? '*': ' ';
+            str.append((i < stat) ? '*' : ' ');
         }
-        str+=']';
+        str.append(']');
 
-        return str;
+        return str.toString();
     }
 
     //Method invoking consequences of stat-values
